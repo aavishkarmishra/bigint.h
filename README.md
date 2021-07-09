@@ -1,27 +1,3 @@
-<p align="center">
-  <a href="https://github.com/aavishkarmishra/bigint.h">
-    <img src="https://image.flaticon.com/icons/png/512/1159/1159283.png" alt="Logo" width="150">
-  </a>
-
-  <h2 align="center"><strong>bigint.h</strong></h2>
-  <p align="center">
-    <a href="https://github.com/aavishkarmishra/bigint.h/wiki"><strong>Enhanced big integer library for C++</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/aavishkarmishra/bigint.h/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/aavishkarmishra/bigint.h/issues">Request Feature</a>
-  </p>
-</p>
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
-### Enhanced big integer library for C++
-
 # Usage
 
 Download the "bigint.h" header .Then #include it inside your code:
@@ -116,27 +92,3 @@ Command to compile cpp files `g++ bigint.hpp bigint.cpp SampleCode.cpp `
     cout << "isPalindrome: " << (bool)bigint::isPalindrome(n9) << endl;           //Checking if a number is palindrome
     cout << "Power: " << bigint::pow(n3, n2) << endl;                          //finds int(X) to the power int(Y)
 ```
-
-## Author 👨‍💻
-
-### [Aavishkar Mishra](https://github.com/aavishkarmishra)
-
-[<img src="https://image.flaticon.com/icons/svg/185/185964.svg" width="35" padding="10">](https://www.linkedin.com/in/aavishkarmishra/)
-[<img src="https://www.flaticon.com/svg/static/icons/svg/1312/1312142.svg" width="35" padding="10">](https://www.twitter.com/aavishkarmishra)
-[<img src="https://image.flaticon.com/icons/svg/185/185985.svg" width="35" padding="10">](https://www.instagram.com/aavishkar_mishra/)
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-[contributors-shield]: https://img.shields.io/github/contributors/aavishkarmishra/bigint.h.svg?style=flat-square
-[contributors-url]: https://github.com/aavishkarmishra/bigint.h/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/aavishkarmishra/bigint.h.svg?style=flat-square
-[forks-url]: https://github.com/aavishkarmishra/bigint.h/network/members
-[stars-shield]: https://img.shields.io/github/stars/aavishkarmishra/bigint.h.svg?style=flat-square
-[stars-url]: https://github.com/aavishkarmishra/bigint.h/stargazers
-[issues-shield]: https://img.shields.io/github/issues/aavishkarmishra/bigint.h.svg?style=flat-square
-[issues-url]: https://github.com/aavishkarmishra/bigint.h/issues
-[license-shield]: https://img.shields.io/github/license/aavishkarmishra/bigint.h.svg?style=flat-square
-[license-url]: https://github.com/aavishkarmishra/bigint.h/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/aavishkarmishra

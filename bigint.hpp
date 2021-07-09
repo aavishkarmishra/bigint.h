@@ -11,20 +11,9 @@ using namespace std;
 class bigint
 {
 private:
-    string str;
+    string Bint;
 
 protected:
-    static string removeZero(string str);
-    static string add(string str1, string str2);
-    static string subtract(string str1, string str2);
-    static string multiply(string str1, string str2);
-    static string division(string str, long long int num);
-    static string division(string str, int num);
-    static string power(string str1, string str2);
-    static string maxCompare(string str1, string str2);
-    static string minCompare(string str1, string str2);
-    static string factorial(int num);
-
 public:
     /*---------------- Constructors ------------------*/
     bigint();
@@ -34,18 +23,21 @@ public:
     bigint(const bigint &N);
 
     /* ------------- Operator Overloading ------------*/
-    friend ostream &operator<<(ostream &output, const bigint &N);
-    friend istream &operator>>(istream &input, bigint &N);
+    friend ostream &operator<<(ostream &output, const bigint &N)
+    {
+        output << N.Bint;
+        return output;
+    }
+    friend istream &operator>>(istream &input, bigint &N)
+    {
+        input >> N.Bint;
+        return input;
+    }
 
     bigint operator++();
     bigint operator--();
     bigint operator++(int);
     bigint operator--(int);
-
-    bigint operator+(bigint const &N);
-    bigint operator-(bigint const &N);
-    bigint operator*(bigint const &N);
-    bigint operator/(bigint const &N);
 
     friend bigint operator+(bigint &N, int num);
     friend bigint operator-(bigint &N, int num);
@@ -56,6 +48,11 @@ public:
     friend bigint operator-(int num, bigint &N);
     friend bigint operator*(int num, bigint &N);
     friend bigint operator/(int num, bigint &N);
+
+    bigint operator+(bigint const &N);
+    bigint operator-(bigint const &N);
+    bigint operator*(bigint const &N);
+    bigint operator/(bigint const &N);
 
     bool operator==(bigint const &N);
     bool operator!=(bigint const &N);
